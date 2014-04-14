@@ -24,7 +24,8 @@
 	display: none;
 	position: fixed;
 	margin: 0 auto;
-	max-width: 400px;
+	padding: 10px 15px;
+	width: 400px;
 	top: 25%;
 	left: 0;
 	right: 0;
