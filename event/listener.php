@@ -25,15 +25,10 @@ class listener implements EventSubscriberInterface
 	static public function getSubscribedEvents()
 	{
 		return array(
-			'core.common' => 'setup',
+			/*'core.common' => 'setup',*/
 			'core.page_header' => 'global_header',
-			/*'core.ucp_display_module_before' => 'switch_style',
-			'core.user_setup' => 'set_guest_style', */
 		);
 	}
-
-	protected $enabled;
-	protected $allow_guests;
 
 	/**
 	*/
