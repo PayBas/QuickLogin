@@ -11,8 +11,8 @@
 	background: #000000;
 	opacity: 0.7;
 	/*filter: alpha(opacity=70);*/
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	min-width: 100%;
 	min-height: 100%;
 	width: 100%;
@@ -23,11 +23,11 @@
 #quick-login-panel {
 	display: none;
 	position: fixed;
-	padding: 10px 15px;
-	top: 50%;
-	left: 50%;
-	margin: -200px;
-	min-width: 400px;
+	margin: 0 auto;
+	max-width: 400px;
+	top: 200px;
+	left: 0;
+	right: 0;
 	z-index: 50;
 }
 
