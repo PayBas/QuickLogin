@@ -1,0 +1,24 @@
+{
+    "name": "paybas/quicklogin",
+    "type": "phpbb-extension",
+    "description": "Adds a simple quick login popup lightbox using JavaScript",
+    "homepage": "http://paybas.com/",
+    "version": "1.0.0",
+    "time": "2014-04-15",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "PayBas",
+            "email": "admin@pbwow.com",
+            "homepage": "http://www.paybas.com/",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "phpbb/phpbb": "3.1.*@dev"
+    },
+    "extra": {
+        "display-name": "Quick Login"
+    }
+}
