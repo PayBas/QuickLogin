@@ -1,17 +1,25 @@
 Quick Login for phpBB 3.1
 ==========
 
-Adds a simple quick login popup lightbox using JavaScript
+Extension for phpBB 3.1 that adds a simple quick login popup lightbox using JavaScript
+
+![Screenshot](screenshot.png)
 
 ## Features
-- Just a simple lightbox popup for quick login
+- Just a simple lightbox popup for quick login actions.
+- Changes the behaviour of the normal login button in the header.
+- Only activates on pages where there is no normal login form (not when trying to access the UCP for example).
 
 #### Requirements
 - >= phpBB 3.1-dev
 - >= PHP 5.4
 
 #### Languages supported
-- No language files included
+- No language files included/necessary
+
+#### To do list
+- Make fully responsive.
+- Since JS is required, we might use it position the popup better. The current method uses only CSS, but that has it's limitations.
 
 ## Installation
 You can install this on the latest copy of the develop branch (phpBB 3.1-dev) by following the steps below.
@@ -19,7 +27,7 @@ You can install this on the latest copy of the develop branch (phpBB 3.1-dev) by
 **Manual:**
 
 1. If there is not yet an `./ext/paybas/quicklogin/` folder tree starting from your board root, create one.
-2. Copy the entire contents of this repo into that folder you just created (You can leave out the *.md files, .gitignore, and the .git folder).
+2. Copy the entire contents of this repo into that folder you just created (You can leave out the *.md files, screenshot.png, .gitignore, and the .git folder).
 3. Go to `ACP -> Customise -> Manage extensions -> Extensions`
 4. Click Enable.
 
