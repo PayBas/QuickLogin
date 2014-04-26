@@ -21,11 +21,13 @@
 }
 
 #quick-login-panel {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	display: none;
 	position: fixed;
 	margin: 0 auto;
 	padding: 10px 15px;
-	width: 400px;
+	width: 420px;
 	top: 25%;
 	left: 0;
 	right: 0;
@@ -37,3 +39,16 @@
 	margin-top: 10px;
 }
 
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px)
+{
+	#quick-login-panel {
+		width: 320px;
+	}
+}
+
+@media only screen and (max-width: 420px), only screen and (max-device-width: 420px)
+{
+	#quick-login-panel {
+		width: auto;
+	}
+}

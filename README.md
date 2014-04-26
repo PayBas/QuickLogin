@@ -1,7 +1,7 @@
 Quick Login for phpBB 3.1
 ==========
 
-Extension for phpBB 3.1 that adds a simple quick login popup lightbox using JavaScript
+Extension for phpBB 3.1 that adds a simple quick login popup lightbox using JavaScript.
 
 ![Screenshot](screenshot.png)
 
@@ -18,7 +18,6 @@ Extension for phpBB 3.1 that adds a simple quick login popup lightbox using Java
 - No language files included/necessary
 
 #### To do list
-- Make fully responsive.
 - Since JS is required, we might use it position the popup better. The current method uses only CSS, but that has it's limitations.
 
 ## Installation
