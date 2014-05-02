@@ -25,19 +25,12 @@ class listener implements EventSubscriberInterface
 	static public function getSubscribedEvents()
 	{
 		return array(
-			/*'core.common' => 'setup',*/
 			'core.page_header' => 'global_header',
 		);
 	}
 
 	/**
 	*/
-	public function setup($event)
-	{
-		global $config;
-
-	}
-	
 	public function global_header($event)
 	{
 		global $template;

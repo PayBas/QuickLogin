@@ -44,6 +44,9 @@
 	#quick-login-panel {
 		width: 320px;
 	}
+	#quick-login-panel h3 {
+		text-align: left;
+	}
 }
 
 @media only screen and (max-width: 420px), only screen and (max-device-width: 420px)
