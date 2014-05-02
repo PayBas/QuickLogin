@@ -39,17 +39,17 @@
 </form>
 
 <script type="text/javascript">
-$(document).ready(function($){
-
-	$button = $(".icon-logout a");
-	$button.attr("href", "#")
-
-	$button.click(function(){
-		$("#quick-login-bg, #quick-login-panel").fadeIn(300);
-	})
-	$("#quick-login-bg").click(function () { 
-		$("#quick-login-bg, #quick-login-panel").fadeOut(300);  
-	})
-
-});
+(function($) {
+	$(document).ready(function() {
+		$button = $(".icon-logout a");
+		$button.attr("href", "#")
+	
+		$button.click(function(){
+			$("#quick-login-bg, #quick-login-panel").fadeIn(300);
+		})
+		$("#quick-login-bg").click(function () { 
+			$("#quick-login-bg, #quick-login-panel").fadeOut(300);  
+		})
+	});
+})(jQuery);
 </script>

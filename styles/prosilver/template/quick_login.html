@@ -37,17 +37,17 @@
 </form>
 
 <script type="text/javascript">
-$(document).ready(function($){
-
-	$button = $(".icon-logout a");
-	$button.attr("href", "#")
-
-	$button.click(function(){
-		$("#darkenwrapper, #quick-login-panel").fadeIn(300);
-	})
-	$("#darkenwrapper").click(function () { 
-		$("#darkenwrapper, #quick-login-panel").fadeOut(300);  
-	})
-
-});
+(function($) {
+	$(document).ready(function() {
+		$button = $(".icon-logout a");
+		$button.attr("href", "#")
+	
+		$button.click(function(){
+			$("#darkenwrapper, #quick-login-panel").fadeIn(300);
+		})
+		$("#darkenwrapper").click(function () { 
+			$("#darkenwrapper, #quick-login-panel").fadeOut(300);  
+		})
+	});
+})(jQuery);
 </script>
