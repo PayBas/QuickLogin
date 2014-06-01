@@ -22,6 +22,14 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class listener implements EventSubscriberInterface
 {
+	/** @var \phpbb\template\template */
+	protected $template;
+
+	public function __construct(\phpbb\template\template $template)
+	{
+		$this->template = $template;
+	}
+
 	static public function getSubscribedEvents()
 	{
 		return array(
@@ -33,12 +41,10 @@ class listener implements EventSubscriberInterface
 	*/
 	public function global_header($event)
 	{
-		global $template;
-
 		$tpl_vars = array(
 			'S_QUICK_LOGIN' => true,
 		);
 
-		$template->assign_vars($tpl_vars);
+		$this->template->assign_vars($tpl_vars);
 	}
 }

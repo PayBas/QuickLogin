@@ -1,5 +1,7 @@
 services:
     paybas.quicklogin.listener:
         class: paybas\quicklogin\event\listener
+        arguments:
+            - @template
         tags:
             - { name: event.listener }
