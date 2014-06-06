@@ -40,9 +40,9 @@
 (function($) {
 	$(document).ready(function() {
 		$button = $(".icon-logout a");
-		$button.attr("href", "#")
-	
-		$button.click(function(){
+
+		$button.click(function(e){
+			e.preventDefault();
 			$("#darkenwrapper, #quick-login-panel").fadeIn(300);
 		})
 		$("#darkenwrapper").click(function () { 

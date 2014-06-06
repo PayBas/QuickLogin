@@ -42,9 +42,9 @@
 (function($) {
 	$(document).ready(function() {
 		$button = $(".icon-logout a");
-		$button.attr("href", "#")
-	
-		$button.click(function(){
+
+		$button.click(function(e){
+			e.preventDefault();
 			$("#quick-login-bg, #quick-login-panel").fadeIn(300);
 		})
 		$("#quick-login-bg").click(function () { 
