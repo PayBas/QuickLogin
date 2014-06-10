@@ -22,6 +22,7 @@
 		<!-- ENDIF -->
 
 		<dl class="ql-options">
+			<dt>&nbsp;</dt>
 			<!-- IF S_AUTOLOGIN_ENABLED --><dd><label for="ql-autologin"><input type="checkbox" name="autologin" id="ql-autologin" tabindex="4" /> {L_LOG_ME_IN}</label></dd><!-- ENDIF -->
 			<dd><label for="ql-viewonline"><input type="checkbox" name="viewonline" id="ql-viewonline" tabindex="5" /> {L_HIDE_ME}</label></dd>
 		</dl>
@@ -41,14 +42,21 @@
 <script type="text/javascript">
 (function($) {
 	$(document).ready(function() {
-		$button = $(".icon-logout a");
+		$button = $('.icon-logout a');
+		var ql_bg = '#quick-login-bg',
+			ql_pnl = '#quick-login-panel',
+			pS_bg = '#darkenwrapper';
+
+		if ($(pS_bg).length) {
+			ql_bg = pS_bg;
+		}
 
 		$button.click(function(e){
 			e.preventDefault();
-			$("#quick-login-bg, #quick-login-panel").fadeIn(300);
+			$(ql_bg + ', ' + ql_pnl).fadeIn(300);
 		})
-		$("#quick-login-bg").click(function () { 
-			$("#quick-login-bg, #quick-login-panel").fadeOut(300);  
+		$(ql_bg).click(function () { 
+			$(ql_bg + ', ' + ql_pnl).fadeOut(300);  
 		})
 	});
 })(jQuery);
