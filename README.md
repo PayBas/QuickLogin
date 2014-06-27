@@ -11,8 +11,8 @@ Extension for phpBB 3.1 that adds a simple quick login popup lightbox using Java
 - Only activates on pages where there is no normal login form (not when trying to access the UCP for example).
 
 #### Requirements
-- >= phpBB 3.1-dev
-- >= PHP 5.3
+- phpBB 3.1-RC1 or higher
+- PHP 5.3.3 or higher
 
 #### Languages supported
 - No language files included/necessary
@@ -21,26 +21,15 @@ Extension for phpBB 3.1 that adds a simple quick login popup lightbox using Java
 - Since JS is required, we might use it position the popup better. The current method uses only CSS, but that has it's limitations.
 
 ## Installation
-You can install this on the latest copy of the develop branch (phpBB 3.1-dev) by following the steps below.
-
-**Manual:**
-
-1. If there is not yet an `./ext/paybas/quicklogin/` folder tree starting from your board root, create one.
-2. Copy the entire contents of this repo into that folder you just created (You can leave out the *.md files, screenshot.png, .gitignore, and the .git folder).
-3. Go to `ACP -> Customise -> Manage extensions -> Extensions`
-4. Click Enable.
-
-**Git:**
-
-1. From the board root run the following git command:
-`git clone https://github.com/paybas/QuickLogin.git ext/paybas/quicklogin`
-2. Go to `ACP -> Customise -> Manage extensions -> Extensions`
-3. Click Enable.
+1. [Download the latest release](https://github.com/PayBas/QuickLogin/releases) and unzip it.
+2. Copy the entire contents from the unzipped folder to `phpBB/ext/paybas/quicklogin/`.
+3. Navigate in the ACP to `Customise -> Manage extensions`.
+4. Find `Quick Login` under "Disabled Extensions" and click `Enable`.
 
 ## Uninstallation
-In the ACP -> Customise -> Manage Extensions -> Extensions module, you can click one of the following:
-- **Disable:** This keeps the Extension data and schema intact but prevents it from running. The whole thing kinda falls apart. The administration area will be unavailable. When you re-enable the extension, all functionality will become active again.
-- **Delete data:** This destroys any data added by the extension, and reverts any schema changes it made. You can re-enable the extension, but all the settings of this extension will be gone.
+1. Navigate in the ACP to `Customise -> Manage extensions`.
+2. Click the `Disable` link for `Quick Login`.
+3. To permanently uninstall, click `Delete Data`, then delete the `quicklogin` folder from `phpBB/ext/paybas/`.
 
 ### License
 [GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
