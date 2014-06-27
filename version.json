@@ -1,0 +1,10 @@
+{
+	"unstable": {
+		"1.0": {
+			"current": "1.0.1",
+			"announcement": "https://github.com/PayBas/QuickLogin/releases/tag/v1.0.1",
+			"eol": null,
+			"security": false
+		}
+	}
+}
