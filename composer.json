@@ -3,7 +3,7 @@
     "type": "phpbb-extension",
     "description": "Adds a simple quick login popup lightbox using JavaScript",
     "homepage": "http://paybas.com/",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "time": "2014-06-27",
     "license": "GPL-2.0",
     "authors": [
