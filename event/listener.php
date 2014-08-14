@@ -11,11 +11,11 @@
 namespace paybas\quicklogin\event;
 
 /**
-* @ignore
-*/
+ * @ignore
+ */
 if (!defined('IN_PHPBB'))
 {
-    exit;
+	exit;
 }
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
@@ -38,7 +38,7 @@ class listener implements EventSubscriberInterface
 	}
 
 	/**
-	*/
+	 */
 	public function global_header($event)
 	{
 		$tpl_vars = array(
