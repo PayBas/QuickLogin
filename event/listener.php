@@ -39,7 +39,7 @@ class listener implements EventSubscriberInterface
 
 	/**
 	 */
-	public function global_header($event)
+	public function global_header()
 	{
 		$tpl_vars = array(
 			'S_QUICK_LOGIN' => true,
