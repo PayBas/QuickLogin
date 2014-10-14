@@ -6,7 +6,7 @@
 		<div class="content">
 			<a href="#" class="close"></a>
 			<h3><a href="{U_LOGIN_LOGOUT}">{L_LOGIN_LOGOUT}</a><!-- IF not S_ADMIN_AUTH and S_REGISTER_ENABLED -->&nbsp; &bull; &nbsp;<a href="{U_REGISTER}">{L_REGISTER}</a><!-- ENDIF --></h3>
-	
+
 			<fieldset>
 				<dl class="ql-username">
 					<dt><label for="ql-username">{L_USERNAME}{L_COLON}</label></dt>
@@ -21,12 +21,12 @@
 					<!-- INCLUDE {CAPTCHA_TEMPLATE} -->
 				<!-- ENDIF -->
 			</fieldset>
-	
+
 			<fieldset class="ql-options">
 				<!-- IF S_AUTOLOGIN_ENABLED --><label for="ql-autologin"><input type="checkbox" name="autologin" id="ql-autologin" tabindex="4" /><span>{L_LOG_ME_IN}</span></label><br /><!-- ENDIF -->
 				<label for="ql-viewonline"><input type="checkbox" name="viewonline" id="ql-viewonline" tabindex="5" /><span>{L_HIDE_ME}</span></label>
 			</fieldset>
-	
+
 			<fieldset class="submit-buttons">
 				<input type="submit" name="login" tabindex="6" value="{L_LOGIN}" class="button1" />
 				{S_LOGIN_REDIRECT}{S_HIDDEN_FIELDS}
@@ -52,8 +52,8 @@
 			e.preventDefault();
 			$(ql_bg + ', ' + ql_pnl).fadeIn(300);
 		});
-		$(ql_bg + ', #quick-login-panel .close').click(function () { 
-			$(ql_bg + ', ' + ql_pnl).fadeOut(300);  
+		$(ql_bg + ', #quick-login-panel .close').click(function () {
+			$(ql_bg + ', ' + ql_pnl).fadeOut(300);
 		})
 	});
 })(jQuery);
