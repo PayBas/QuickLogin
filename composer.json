@@ -2,7 +2,7 @@
     "name": "paybas/quicklogin",
     "type": "phpbb-extension",
     "description": "Adds a simple quick login popup lightbox using JavaScript",
-    "homepage": "http://paybas.com/",
+    "homepage": "https://github.com/PayBas/QuickLogin",
     "version": "1.0.3",
     "time": "2014-10-14",
     "license": "GPL-2.0",
@@ -10,7 +10,7 @@
         {
             "name": "PayBas",
             "email": "admin@pbwow.com",
-            "homepage": "http://www.paybas.com/",
+            "homepage": "http://www.paybas.com",
             "role": "Lead Developer"
         }
     ],
