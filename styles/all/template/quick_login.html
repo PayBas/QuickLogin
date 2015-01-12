@@ -32,6 +32,12 @@
 				<input type="submit" name="login" tabindex="6" value="{L_LOGIN}" class="button1" />
 				{S_LOGIN_REDIRECT}{S_HIDDEN_FIELDS}
 			</fieldset>
+
+			{% for mode in loops.ql_oauth %}
+				{% if loop.first %}<hr /><p class="ql-oauth">{% endif %}
+					<a href="{{ mode.REDIRECT_URL }}">{{ mode.SERVICE_NAME }}</a>
+				{% if loop.last %}</p>{% else %}&nbsp;&bull;&nbsp;{% endif %}
+			{% endfor %}
 		</div>
 	</div>
 </div>

@@ -44,12 +44,22 @@
 	text-align: center;
 }
 
+#quick-login-panel hr {
+	margin: 10px 0;
+}
+
 #quick-login-panel .ql-options {
 	margin: 5px auto 10px;
 }
 
 #quick-login-panel .ql-options span {
 	vertical-align: middle;
+}
+
+#quick-login-panel .ql-oauth {
+	font-weight: bold;
+	margin: 0;
+	text-align: center;
 }
 
 #quick-login-panel .close {

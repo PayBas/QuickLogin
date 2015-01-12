@@ -2,8 +2,10 @@ services:
     paybas.quicklogin.listener:
         class: paybas\quicklogin\event\listener
         arguments:
+            - @auth.provider_collection
             - @config
             - @template
+            - @user
             - %core.root_path%
             - %core.php_ext%
         tags:
