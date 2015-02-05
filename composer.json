@@ -3,8 +3,8 @@
     "type": "phpbb-extension",
     "description": "Adds a simple quick login popup lightbox using JavaScript",
     "homepage": "https://github.com/PayBas/QuickLogin",
-    "version": "1.0.4",
-    "time": "2015-12-11",
+    "version": "1.0.5",
+    "time": "2015-02-05",
     "license": "GPL-2.0",
     "authors": [
         {
