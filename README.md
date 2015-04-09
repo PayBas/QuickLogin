@@ -22,14 +22,14 @@ Extension for phpBB 3.1 that adds a simple quick login popup lightbox using Java
 
 ## Installation
 1. [Download the latest release](https://github.com/PayBas/QuickLogin/releases) and unzip it.
-2. Copy the entire contents from the unzipped folder to `phpBB/ext/paybas/quicklogin/`.
+2. Copy the entire contents from the unzipped folder to `/ext/paybas/quicklogin/`.
 3. Navigate in the ACP to `Customise -> Manage extensions`.
 4. Find `Quick Login` under "Disabled Extensions" and click `Enable`.
 
 ## Uninstallation
 1. Navigate in the ACP to `Customise -> Manage extensions`.
 2. Click the `Disable` link for `Quick Login`.
-3. To permanently uninstall, click `Delete Data`, then delete the `quicklogin` folder from `phpBB/ext/paybas/`.
+3. To permanently uninstall, click `Delete Data`, then delete the `quicklogin` folder from `/ext/paybas/`.
 
 ### License
 [GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
