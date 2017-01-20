@@ -61,10 +61,14 @@ class listener implements EventSubscriberInterface
 			{
 				if (isset($auth_provider_data['BLOCK_VAR_NAME']) && ($auth_provider_data['BLOCK_VAR_NAME'] == 'oauth'))
 				{
-					foreach ($auth_provider_data['BLOCK_VARS'] as $block_vars)
+					foreach ($auth_provider_data['BLOCK_VARS'] as $oauth_provider => $block_vars)
 					{
-                        			$block_vars['REDIRECT_URL'] = './ucp.php?mode=login&login=external&oauth_service='.$block_vars['HIDDEN_FIELDS']['oauth_service'];
-                        			$this->template->assign_block_vars('ql_' . $auth_provider_data['BLOCK_VAR_NAME'], $block_vars);
+
+						$oauth_provider = str_replace('auth.provider.oauth.service.', '', $oauth_provider);
+						$redirect_url = './ucp.php?mode=login&login=external&oauth_service='.$oauth_provider;
+						$block_vars['REDIRECT_URL'] = $redirect_url;
+						$this->template->assign_block_vars('ql_' . $auth_provider_data['BLOCK_VAR_NAME'], $block_vars);
+
 					}
 				}
 			}
