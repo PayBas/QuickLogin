@@ -61,9 +61,14 @@ class listener implements EventSubscriberInterface
 			{
 				if (isset($auth_provider_data['BLOCK_VAR_NAME']) && ($auth_provider_data['BLOCK_VAR_NAME'] == 'oauth'))
 				{
-					foreach ($auth_provider_data['BLOCK_VARS'] as $block_vars)
+					foreach ($auth_provider_data['BLOCK_VARS'] as $oauth_provider => $block_vars)
 					{
-						// $this->template->assign_block_vars('ql_' . $auth_provider_data['BLOCK_VAR_NAME'], $block_vars); TODO: needs redirect fix for provider oauth.php
+
+						$oauth_provider = str_replace('auth.provider.oauth.service.', '', $oauth_provider);
+						$redirect_url = './ucp.php?mode=login&login=external&oauth_service='.$oauth_provider;
+						$block_vars['REDIRECT_URL'] = $redirect_url;
+						$this->template->assign_block_vars('ql_' . $auth_provider_data['BLOCK_VAR_NAME'], $block_vars);
+
 					}
 				}
 			}
